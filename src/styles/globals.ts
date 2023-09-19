@@ -13,6 +13,10 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+body {
+  overflow: hidden;
+}
+
 a {
   display: block;
   align-self: center;
