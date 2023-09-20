@@ -12,6 +12,4 @@ export const Main = styled.main`
     top: 2rem;
     left: 2rem;
   }
-
-  picture { img {width: 100%; height: 100%;} }
 `; 
