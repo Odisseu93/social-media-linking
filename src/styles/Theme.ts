@@ -7,8 +7,8 @@ const Theme = {
 	},
 
 	background: {
-		bodyDesktop: 'assets/img/bg_body_desktop.svg',
-		bodyMobile: 'assets/img/bg_body_mobile.svg',
+		bodyDesktop: 'assets/img/bglight_body_desktop.jpg',
+		bodyMobile: 'assets/img/bglight_body_mobile.jpg',
 		linearPurple: 'linear-gradient(180deg, rgba(112, 14, 249, 0.30) 0%, rgba(135, 27, 251, 0.10) 100%), linear-gradient(120deg, rgba(250, 250, 250, 0.40) 0%, rgba(254, 253, 250, 0.10) 96.16%)'
 	},
 
