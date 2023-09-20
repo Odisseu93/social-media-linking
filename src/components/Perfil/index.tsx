@@ -7,7 +7,7 @@ import perfilpic from '/assets/img/perfil_picture.svg';
 
 /** Name, title and picture */
 const Perfil = () => (
-	<C.Perfil clasName='perfil'>
+	<C.Perfil className='perfil'>
 		<Img src={perfilpic} alt='Ulisses pefil picture' className='photo' />
 		<Title />
 	</C.Perfil>
