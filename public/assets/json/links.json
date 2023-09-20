@@ -1,0 +1,24 @@
+{
+  "links": [
+    {
+      "name": "linkedIn",
+      "to": "https://www.linkedin.com/in/ulisses-silverio",
+      "iconName": "linkedIn"
+    },
+    {
+      "name": "gitHub",
+      "to": "https://github.com/Odisseu93",
+      "iconName": "gitHub"
+    },
+    {
+      "name": "email",
+      "to": "malito:contato@ulisses.tec.br",
+      "iconName": "email"
+    },
+    {
+      "name": "discord",
+      "to": "http://discordapp.com/users/823312140067930174",
+      "iconName": "discord"
+    }
+    ]
+}
