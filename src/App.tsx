@@ -60,8 +60,8 @@ export default function App() {
 					): null }
 				</C.Content>
 
-				<Footer />
 			</Main>
+			<Footer />
 		</>
 	);
 }
