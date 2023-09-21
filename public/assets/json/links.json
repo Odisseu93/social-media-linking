@@ -12,7 +12,7 @@
     },
     {
       "name": "email",
-      "to": "malito:contato@ulisses.tec.br",
+      "to": "mailto:contato@ulisses.tec.br",
       "iconName": "email"
     },
     {
