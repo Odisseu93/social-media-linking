@@ -19,6 +19,11 @@
       "name": "discord",
       "to": "http://discordapp.com/users/823312140067930174",
       "iconName": "discord"
+    },
+    {
+      "name": "youtube",
+      "to": "https://www.youtube.com/UlissesSilverio",
+      "iconName": "youtube"
     }
-    ]
+  ]
 }

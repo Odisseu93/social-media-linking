@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin, BsDiscord } from 'react-icons/bs';
+import { BsGithub, BsLinkedin, BsDiscord , BsYoutube } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import { PiSlackLogoThin } from 'react-icons/pi';
 
@@ -9,4 +9,5 @@ export default {
 	email: MdEmail,
 	discord: BsDiscord,
 	slack: PiSlackLogoThin,
+	youtube: BsYoutube
 };
