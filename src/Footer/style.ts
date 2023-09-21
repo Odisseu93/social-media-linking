@@ -5,8 +5,9 @@ import Theme from '../styles/Theme';
 const Footer = styled.footer`
   position: fixed;
   bottom: 0;
+  
   ${Theme.fontSizes['base']}
-  `;
+`;
 
 const Content = styled.div`
   display: flex;  
