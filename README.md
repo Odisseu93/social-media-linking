@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+# Social media Linking
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto visa expor os links de redes socias profissionais do Desenvolvedor web [Ulisses Silvério](https://www.linkedin.com/in/ulisses-silverio/)
 
-Currently, two official plugins are available:
+## Screenshots
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![desktop](https://github.com/Odisseu93/social-media-linking/assets/76600539/2c78512c-423e-4a7a-849d-f48e38b611df)
+![mobile](https://github.com/Odisseu93/social-media-linking/assets/76600539/c42846f4-c8d7-431f-8138-8380b07d5738)
 
-## Expanding the ESLint configuration
+## Design
+[Figma](https://www.figma.com/file/MZ0lYp2e3GNlZPVLt3rDaf/Social-media-Linking?type=design&node-id=0%3A1&mode=dev) 
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Developer / Desenvolvedor
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/76600539/235897309-88ab21df-d0be-4905-829c-36ab68ebc2e8.png" alt="developer: Ulisses Silvério"    width="200px" align="center"/>
+</div>
+<br>
+<div align="center" margin="50px">
+ <a href="https://www.ulisses.tec.br" align="center">
+   site
+</a>
+</div>
