@@ -3,10 +3,15 @@ import styled from 'styled-components';
 import Theme from '../styles/Theme';
 
 const Footer = styled.footer`
+  display: none;
   position: fixed;
   bottom: 0;
   
   ${Theme.fontSizes['base']}
+  
+  @media (min-width: 768px) {
+    display: block;
+  }
 `;
 
 const Content = styled.div`
