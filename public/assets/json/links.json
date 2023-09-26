@@ -24,6 +24,12 @@
       "name": "youtube",
       "to": "https://www.youtube.com/UlissesSilverio",
       "iconName": "youtube"
+    },
+    {
+      "name": "currículo",
+      "to": "https://drive.google.com/file/d/12zDxsRQhIECmslZZOy_Y6LQIzSMGPgvx/view?usp=sharing",
+      "iconName": "pdf"
     }
+
   ]
 }
