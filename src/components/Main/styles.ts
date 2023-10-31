@@ -3,8 +3,8 @@ import styled from 'styled-components';
 import Theme from '../../styles/Theme';
 
 export const Main = styled.main`
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
 
   overflow: auto;
   scroll-behavior: smooth;

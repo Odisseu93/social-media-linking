@@ -10,7 +10,7 @@ width: 100vw;
 height: 1000%;
 
 @media (min-width: 768px) {
-  height: 95%;
+  height: 100%;
 }
 
 backdrop-filter: ${Theme.effects.backdropFilterBlurWhite};

@@ -10,7 +10,7 @@ const Footer = styled.footer`
   ${Theme.fontSizes['base']}
   
   @media (min-width: 768px) {
-    display: block;
+    display: none;
   }
 `;
 

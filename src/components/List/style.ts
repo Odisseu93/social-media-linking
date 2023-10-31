@@ -7,7 +7,8 @@ const commonCss = css`
 
   width: fit-content;
 
-  margin: 0 auto;
+  margin-inline: auto;
+  padding-bottom: 5rem;
 
   list-style: none;
 
@@ -19,6 +20,7 @@ const commonCss = css`
     max-width: 800px;
 
     margin-top: 3rem;
+    padding-bottom: 0;
   }
 `;
 
