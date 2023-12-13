@@ -1,13 +1,14 @@
-import { useLayoutEffect, useState } from 'react';
+import { lazy, useLayoutEffect, useState } from 'react';
 
-import Main from './components/Main';
-import GrassBackground from './components/GlassBackground';
-import Perfil from './components/Perfil';
-import MainBg from './components/Main/MainBg';
-import NavButton from './components/buttons/NavButton';
+const Main = lazy(()=> import('./components/Main'));
+const GrassBackground = lazy(() => import('./components/GlassBackground'));
+const Perfil = lazy(() => import('./components/Perfil'));
+const MainBg = lazy(() => import('./components/Main/MainBg'));
+const NavButton = lazy(() => import('./components/buttons/NavButton'));
+const List = lazy(() => import('./components/List'));
+const Nav = lazy(() => import('./components/Nav'));
+
 import Icon from './components/Icons';
-import List from './components/List';
-import Nav from './components/Nav';
 
 import * as C from './style';
 import Footer from './Footer';
