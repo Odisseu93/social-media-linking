@@ -1,4 +1,5 @@
 import { lazy, useLayoutEffect, useState } from 'react';
+import ReactGA from 'react-ga4';
 
 const Main = lazy(()=> import('./components/Main'));
 const GrassBackground = lazy(() => import('./components/GlassBackground'));
@@ -22,6 +23,8 @@ type Links = {
 export default function App() { 
 	const [links, setLinks] = useState<Links[]>({} as Links[]);
 
+	ReactGA.initialize('G-XCSCDF3N1Z');
+
 	const getLinks = async() => {
 		try {
 			const res = await fetch('assets/json/links.json');
@@ -32,6 +35,16 @@ export default function App() {
 			console.error(err);
 		}
 	};
+    
+	const handleLinkNameGA =  (name: string) => {
+		ReactGA.event({
+			category: 'professional links',
+			action: 'redirect',
+			label: name, // optional
+			value: 99, // optional, must be a number
+		});
+	}; 
+
 
 	useLayoutEffect(()=> {
 		(async ()=>{
@@ -53,7 +66,7 @@ export default function App() {
 							<List type='ul'>
 
 								{links.map(({name, to, iconName}, index: number)=> (
-									<NavButton key={index} iconName={iconName}  to={to} target='_blank'>
+									<NavButton key={index} iconName={iconName} onClick={() => handleLinkNameGA(name)}  to={to} target='_blank'>
 										{name}
 									</NavButton>))}
 							</List>
