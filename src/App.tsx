@@ -1,7 +1,7 @@
-import { lazy, useLayoutEffect, useState } from 'react';
+import { lazy, useLayoutEffect, useMemo, useState } from 'react';
 import ReactGA from 'react-ga4';
 
-const Main = lazy(()=> import('./components/Main'));
+const Main = lazy(() => import('./components/Main'));
 const GrassBackground = lazy(() => import('./components/GlassBackground'));
 const Perfil = lazy(() => import('./components/Perfil'));
 const MainBg = lazy(() => import('./components/Main/MainBg'));
@@ -15,17 +15,17 @@ import * as C from './style';
 import Footer from './Footer';
 
 type Links = {
-	name:  string
+	name: string
 	to: string
 	iconName: keyof typeof Icon
 }
 
-export default function App() { 
+export default function App() {
 	const [links, setLinks] = useState<Links[]>({} as Links[]);
 
 	ReactGA.initialize('G-XCSCDF3N1Z');
 
-	const getLinks = async() => {
+	const getLinks = async () => {
 		try {
 			const res = await fetch('assets/json/links.json');
 			const { links } = await res.json();
@@ -35,45 +35,57 @@ export default function App() {
 			console.error(err);
 		}
 	};
-    
-	const handleLinkNameGA =  (name: string) => {
+
+	const handleLinkNameGA = (name: string) => {
 		ReactGA.event({
 			category: 'professional links',
 			action: 'redirect',
 			label: name, // optional
 			value: 99, // optional, must be a number
 		});
-	}; 
+	};
 
-
-	useLayoutEffect(()=> {
-		(async ()=>{
+	useLayoutEffect(() => {
+		(async () => {
 			await getLinks();
 		})();
-	},[]);
+	}, []);
+
+	const renderMyLinks = useMemo(()=> {
+		const hasLinks = links && links.length > 0; 
+
+		if (!hasLinks) return <></>;
+		return (
+			<Nav>
+				<List type='ul'>
+					{links.map(({ name, to, iconName }, index: number) => (
+						<NavButton
+							key={index}
+							iconName={iconName}
+							onClick={() => handleLinkNameGA(name)}
+							to={to}
+							target='_blank'
+						>
+							{name}
+						</NavButton>
+					))}
+				</List>
+			</Nav>
+
+		);
+	},[links]);
 
 	return (
 		<>
 			<Main>
-				<MainBg/>
+				<MainBg />
 
 				<GrassBackground />
 
 				<C.Content>
-					<Perfil/>
-					{	links && links.length > 0 ? (
-						<Nav>
-							<List type='ul'>
-
-								{links.map(({name, to, iconName}, index: number)=> (
-									<NavButton key={index} iconName={iconName} onClick={() => handleLinkNameGA(name)}  to={to} target='_blank'>
-										{name}
-									</NavButton>))}
-							</List>
-						</Nav>
-					): null }
+					<Perfil />
+					{renderMyLinks}
 				</C.Content>
-
 			</Main>
 			<Footer />
 		</>
