@@ -15,7 +15,7 @@
     "typescript": "^5.0.0"
   },
   "dependencies": {
+    "@libsql/client": "^0.15.2",
     "vkrun": "^2.1.1"
   }
 }
-
