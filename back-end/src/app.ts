@@ -6,8 +6,6 @@ const corsCofig: v.CorsSetOptions = {
 	origin: env.ALLOWED_DOMAINS
 };
 
-console.log('ALLOWED_DOMAINS', env.ALLOWED_DOMAINS);
-
 const cors = v.cors;
 const app = v.App();
 

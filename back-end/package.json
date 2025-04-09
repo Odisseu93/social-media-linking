@@ -1,21 +1,23 @@
 {
-  "name": "social-media-linking-back-end",
-  "module": "index.ts",
-  "type": "module",
+  "name": "back-end-social-media-liking",
+  "version": "1.0.0",
+  "description": "To install dependencies:",
+  "main": "index.js",
   "scripts": {
-    "dev": "bun --watch run src/server.ts",
-    "start": "bun run src/server.ts",
-    "test": "bun test",
-    "test:watch": "bun test --watch"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsx watch ./src/server.ts"
   },
-  "devDependencies": {
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
-    "typescript": "^5.0.0"
-  },
+  "keywords": [],
+  "author": "Odisseu93 / Ulisses Silvério <contato@ulisses.com> (https://ulisses.tec.br/)",
+  "license": "ISC",
   "dependencies": {
     "@libsql/client": "^0.15.2",
     "vkrun": "^2.1.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
   }
 }

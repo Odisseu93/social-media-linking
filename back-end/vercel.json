@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "name": "Login page API",
+  "name": "Social media Linking API",
   "github": {
     "enabled": true
   },
@@ -14,7 +14,14 @@
     {
       "src": "/(.*)",
       "dest": "src/server.ts",
-      "methods": ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"]
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE",
+        "OPTIONS"
+      ]
     }
   ]
 }
