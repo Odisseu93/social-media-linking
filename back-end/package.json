@@ -2,6 +2,7 @@
   "name": "back-end-social-media-liking",
   "version": "1.0.0",
   "description": "To install dependencies:",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
