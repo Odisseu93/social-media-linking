@@ -1,0 +1,23 @@
+{
+  "name": "back-end-social-media-liking",
+  "version": "1.0.0",
+  "description": "To install dependencies:",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsx watch ./src/server.ts"
+  },
+  "keywords": [],
+  "author": "Odisseu93 / Ulisses Silvério <contato@ulisses.com> (https://ulisses.tec.br/)",
+  "license": "ISC",
+  "dependencies": {
+    "@libsql/client": "^0.15.2",
+    "vkrun": "^2.1.1"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.2",
+    "tsx": "^4.19.3",
+    "typescript": "^5.8.3"
+  }
+}

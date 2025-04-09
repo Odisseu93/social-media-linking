@@ -1,0 +1,27 @@
+{
+  "version": 2,
+  "name": "Social media Linking API",
+  "github": {
+    "enabled": true
+  },
+  "builds": [
+    {
+      "src": "src/server.ts",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "src/server.ts",
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "PATCH",
+        "DELETE",
+        "OPTIONS"
+      ]
+    }
+  ]
+}

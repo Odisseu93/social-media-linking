@@ -26,8 +26,10 @@ export default function App() {
 	ReactGA.initialize('G-XCSCDF3N1Z');
 
 	const getLinks = async () => {
+		const baseURL = import.meta.env.VITE_API_BASE_URL as string;
+		console.log(baseURL);
 		try {
-			const res = await fetch('assets/json/links.json');
+			const res = await fetch(`${baseURL}/links`);
 			const { links } = await res.json();
 
 			if (links) setLinks(links);
